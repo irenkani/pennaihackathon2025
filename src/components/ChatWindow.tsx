@@ -8,10 +8,10 @@ interface ChatWindowProps {
 
 const ChatWindow: React.FC<ChatWindowProps> = ({ messages }) => {
   return (
-    <div className="flex-1 overflow-y-auto p-4">
+    <div className="flex-1 overflow-y-auto p-6 space-y-4">
       {messages.map((msg, index) => (
         <MessageBubble
-          key={index} 
+          key={index}
           sender={msg.sender}
           text={msg.text}
         />

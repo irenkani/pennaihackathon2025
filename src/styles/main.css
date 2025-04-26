@@ -1,0 +1,29 @@
+@config "tailwind.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes background-wave {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animate-background-wave {
+    background-size: 400% 400%;
+    animation: background-wave 20s ease infinite;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    cursor: url('https://cur.cursors-4u.net/others/oth-8/oth775.cur'), auto;
+  }
+  
